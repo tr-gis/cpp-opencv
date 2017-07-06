@@ -1,0 +1,23 @@
+Working with opencv and eclipse is similar to working with any C++ project. The overall outline of steps is as follows:
+
+create the code with eclipse => create CMakeLists.txt and place it outside => create a build directory and call "cmake .."=> call "make" and run the executable.
+
+remember to keep eclipse workspace seperate from project directory.
+
+step 1:
+
+*)Open Eclipse IDE for C/C++ Developers and choose an appropriate location for workspace.
+*)File -> New -> C/C++ project.
+*)Choose Empty Project under Executable and Linux GCC for toolchains.
+*)Create "src" and "include" folder.
+*)Place header files with class and function declaration inside "include".
+*)Place the function definition in .cpp file and place inside "src" directory.
+
+step 2:
+
+*)Create a "build" folder inside the project directory.
+*)Place the CMakeLists.txt file inside the project directory, outside "build" folder.
+*)Launch terminal and cd into "build" folder.
+*)run "cmake .." commmand. This will generate the makefiles required for the next step.
+*)run "make" command now. This will generate the executable file.
+*)run the executable with "./executable_name"
